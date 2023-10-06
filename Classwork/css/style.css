@@ -1,13 +1,14 @@
 
+
 body{
-    background-color: rgb(186, 112, 195);
+    background-color:#8DA9C4
 }
 .container{
     width:1000px;
     border: 1px solid rgb(0, 0, 0);
     margin: 0 auto;
     padding: 50px;
-    background-color: rgb(161, 93, 217);
+    background-color: #6f58c9
 }
 .nav{
     list-style: none;
@@ -18,8 +19,8 @@ body{
     margin-right: 75px;
 }
 p{
-   color:rgb(63, 21, 75) 
+   color: #7e78d2;
 }
 h1,h2,h3,h4{
-    color:rgb(63, 21, 75) 
+    color:#13115c  
 }

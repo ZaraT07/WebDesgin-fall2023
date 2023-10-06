@@ -1,0 +1,15 @@
+.container{
+    width:1000px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgb(161, 93, 217);
+}
+.nav{
+    list-style: none;
+    text-align: center;
+}
+.nav li{
+    display: inline;
+    margin-right: 75px;
+}

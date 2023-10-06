@@ -1,3 +1,7 @@
+
+body{
+    background-color: rgb(186, 112, 195);
+}
 .container{
     width:1000px;
     border: 1px solid rgb(0, 0, 0);
@@ -12,4 +16,10 @@
 .nav li{
     display: inline;
     margin-right: 75px;
+}
+p{
+   color:rgb(63, 21, 75) 
+}
+h1,h2,h3,h4{
+    color:rgb(63, 21, 75) 
 }

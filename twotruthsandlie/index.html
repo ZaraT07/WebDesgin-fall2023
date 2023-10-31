@@ -36,7 +36,7 @@
                 <label for="statement5">Blue</label><br>
                 <input type="radio" id="statement6" name="2truth1lie" value="lie">
                 <label for="statement6">Purple</label><br>
-                <input type="button" value="submit" onclick="Checktruth()">
+                <input type="button" value="submit" onclick="Checkt()">
             </form>
             <p id="answer"></p>
             
@@ -69,6 +69,25 @@
                         answerTag.style.color="red";
                         answerTag.style.display = 'block';
                     }
+                }
+                function Checkt(){
+                    let answerTag = document.getElementById('answer')
+                    if(document.getElementById('statement4').checked){
+                        answerTag.innerHtml='lie';
+                        answerTag.style.color="red";
+                        answerTag.style.display = 'block';
+                    }
+                    if(document.getElementById('statement5').checked){
+                        answerTag.innerHtml='truth';
+                        answerTag.style.color="green";
+                        answerTag.style.display = 'block';
+                    }
+                    if(document.getElementById('statement6').checked){
+                        answerTag.innerHtml='lie';
+                        answerTag.style.color="red";
+                        answerTag.style.display = 'block';
+                    }
+                    
                 }
             </script>
     </body>

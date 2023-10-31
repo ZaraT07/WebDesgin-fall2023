@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Demo</title>
+    </head>
+    <body>
+        <h1>Zara's Two Truths and a Lie</h1>
+        <h3>Welcome!</h3>
+
+
+
+            <p>Enter name here:</p>
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="fname"><br>
+                <input type="submit" value="submit" onclick="hello()">
+            </form>
+            <hr>
+            <p>pick the lie:</p>
+            <form>
+                <input type="radio" id="statement1" name="2truth1lie" value="truth">
+                <label for="statement1">I like dogs better than cats</label><br>
+                <input type="radio" id="statement2" name="2truth1lie" value="lie">
+                <label for="statement2">I like to ski</label><br>
+                <input type="radio" id="statement3" name="2truth1lie" value="lie">
+                <label for="statement3">My favorite article of clothing is sweatpants</label><br>
+                <input type="button" value="submit" onclick="Checktruth()">
+            </form>
+            <p id="answer"></p>
+            <hr>
+            <p>What is my favorite color?(Pick the lie):</p>
+            <form>
+                <input type="radio" id="statement4" name="2truth1lie" value="lie">
+                <label for="statement4">Pink</label><br>
+                <input type="radio" id="statement5" name="2truth1lie" value="truth">
+                <label for="statement5">Blue</label><br>
+                <input type="radio" id="statement6" name="2truth1lie" value="lie">
+                <label for="statement6">Purple</label><br>
+                <input type="button" value="submit" onclick="Checktruth()">
+            </form>
+            <p id="answer"></p>
+            
+
+
+            <script>
+                function reveal(){
+                    document.getElementById('secret').innerHTML='shh very very secret';
+                getElementById('secret').style.display='block'
+                }
+                function hello(){
+                    let name = document.getElementById('fname').value;
+                    alert("Hello, " + name);
+                }
+
+                function Checktruth(){
+                    let answerTag = document.getElementById('answer')
+                    if(document.getElementById('statement1').checked){
+                        answerTag.innerHtml='truth';
+                        answerTag.style.color="green";
+                        answerTag.style.display = 'block';
+                    }
+                    if(document.getElementById('statement2').checked){
+                        answerTag.innerHtml='lie';
+                        answerTag.style.color="red";
+                        answerTag.style.display = 'block';
+                    }
+                    if(document.getElementById('statement3').checked){
+                        answerTag.innerHtml='lie';
+                        answerTag.style.color="red";
+                        answerTag.style.display = 'block';
+                    }
+                }
+            </script>
+    </body>
+</html>

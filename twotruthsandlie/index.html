@@ -38,7 +38,7 @@
                 <label for="statement6">Purple</label><br>
                 <input type="button" value="submit" onclick="Checkt()">
             </form>
-            <p id="answer"></p>
+            <p id="ans"></p>
             
 
 
@@ -57,7 +57,7 @@
                     if(document.getElementById('statement1').checked){
                         answerTag.innerHtml='truth';
                         answerTag.style.color="green";
-                        answerTag.style.display = 'block';
+                        answerTag.style.display='block';
                     }
                     if(document.getElementById('statement2').checked){
                         answerTag.innerHtml='lie';
@@ -69,9 +69,10 @@
                         answerTag.style.color="red";
                         answerTag.style.display = 'block';
                     }
+
                 }
                 function Checkt(){
-                    let answerTag = document.getElementById('answer')
+                    let answerTag = document.getElementById('ans')
                     if(document.getElementById('statement4').checked){
                         answerTag.innerHtml='lie';
                         answerTag.style.color="red";

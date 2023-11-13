@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item navmenu">
+            <ul class="nav">
+                <li><img src="images/logo.png" alt="logo" style="width:100px;height:100px"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="member.html">Member</a></li>
+            </ul>
+        </div>
+
+        <div class="grid-item banner">
+          <h2>Volunteering!</h2> 
+        </div>
+
+        <div class="grid-item main1">
+            <h4>Meeting Wonderful People and Friends!</h4>
+            <p>One of the best things about the Metaphysical Library is the opportunity to meet other people 
+                with the same esoteric interests that you have. The Library has over <strong>11,000 books</strong>, roughly 
+                organized by category. It is a huge job to get them organized within category. Volunteering 
+                to help with the shelving is a nice way to see what the Library has to offer.<br><br>
+
+                In addition to books, the library has an extensive, uncataloged collection of audio tapes, video tapes, 
+                magazines, CDs, self-published polemics and zines, as well as many file folders of newspaper clippings 
+                spanning a 40-year history. This material has never been cataloged, and that is one of the things we
+                would like to focus on in the new library.</p>
+
+            <hr>
+
+            <h4>Help Us Promote!</h4>
+            <p>Please download, print and post Flyers about our upcoming events. Post them in coffee shops, bulletin boards
+                - anywhere posting about local events is allowed. This is a great way you can support the Library -
+                by helping get the word out about us and our Events. Check back soon for a new Flyer to distribute.</p>
+            
+            <hr>
+
+            <h4>Publicity</h4>
+            <p>We can always use help with graphic design and publicity. If you have a flair or interest in helping us make 
+                flyers and get the word out, please contact us by e-mail or at (206) 329-1794.</p>
+            
+            <hr>
+            <h4>Subject-Matter Experts</h4>
+            <p>If you are an expert in one of the areas we cover, and are interested in helping shape the collection, we welcome 
+                your input.  We can use help in cataloging the material, as well as in building the collection.</p>
+            
+            <hr>
+            <h4>Carpentry</h4>
+            <p>We could use some help with carpentry.  We have high ceilings, and our bookcases do not go up to the ceiling.  We’d 
+                like to build some wooden bases upon which to stand our bookcases, and then make sure the bookcases are tightly 
+                affixed to the wall.<br>
+ 
+                Also, our fluorescent lighting could use some improvements.</p>
+
+        
+        </div>
+        <div class="grid-item sidenav">
+            <h4>Interested?</h4>
+            <p>If you are interested in volunteering, leave a message or send an email to:
+            </p>
+            <p style="font-size: 20px;">Volunteer@SeattleMetaphysicalLibrary.org</p>
+            <hr>
+            <p>If you want to volunteer please fill out the form!</p>
+            <form style="text-align:center;">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="myName"><br>
+
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="myLName"><br>
+
+                <label for="age">Age:</label><br>
+                <input type="text" id="grade" name="myAge"><br>
+
+                <input type="submit" value="submit" onclick="hello()">
+            </form>
+
+        </div>
+
+    </div>
+    <div class="footer">
+        Created by &copy; Tareen and Webdesign Final
+    </div>
+
+    <script>
+        function hello() {
+            let lname= document.getElementById('lname').value;
+            name= document.getElementById('fname').value;
+            alert("Hello," + name + lname );
+        }
+    </script>
+</body>
+</html>

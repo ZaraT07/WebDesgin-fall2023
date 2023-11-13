@@ -38,7 +38,7 @@ ul.nav li a{
     grid-column:1/ span 3;
 }
 
-.main-image{
+.banner{
     grid-column:1/ span 3;
     grid-row: 2;
 
@@ -51,14 +51,7 @@ ul.nav li a{
     grid-column:2/ span 1;
     grid-row:4; 
 }
-.main3{
-    grid-column:1/ span 1;
-    grid-row:4;
-}
-.main4{
-    grid-column:1/ span 2;
-    grid-row:5; 
-}
+
 .sidenav{
     grid-column:3;
     grid-row:3/ span 3;
@@ -69,8 +62,24 @@ ul.nav li a{
     bottom:0;
     text-align:center;
     width:100%;
-    background-color:white;
+    color:aliceblue;
+    background-color: rgb(9, 5, 73);
 }
-h1,h2,h3,h4,p{
+h1,h2,h3,h4,h5,p,tr{
     color:rgb(54, 9, 73)
+}
+h1,h2{
+    font-family: "Guyot Sans ExtraLight", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+}
+p,tr{
+    font-family: "Reina Neue Small Regular", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+}
+h3,h4{
+    font-family: "Kohinoor Odia Light", sans-serif;
+            font-weight: 500;
+            font-style: normal;
 }
